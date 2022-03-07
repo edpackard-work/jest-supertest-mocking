@@ -18,8 +18,7 @@ app.use('/', router.getRouter())
 describe('good route - mocked', () => {
 
   test('responds correctly to get /', async() => {
-    
-    
+    console.log("Starting the test with mocking")
     jest.spyOn(mockController, 'getData').mockReturnValue('Data from the *mocked* controller')
     const res = await request(app).get('/')
     expect(res.statusCode).toBe(200)
