@@ -1,4 +1,4 @@
-import MyRouter from '../routers/router'
+import MyRouter from '../routers/MyRouter'
 
 import request from 'supertest'
 import express from 'express'

@@ -1,7 +1,7 @@
-import MyRouter from '../routers/router'
-import MyController from '../controllers/controller'
+import MyRouter from '../routers/MyRouter'
+import MyController from '../controllers/MyController'
 
-jest.mock('../controllers/controller')
+jest.mock('../controllers/MyController')
 const mockedMyController = (MyController as unknown) as jest.Mock<MyController>
 let mockController: MyController
 
